@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <style>
+   
+    .about-section {
+      padding: 100px;
+      text-align: center;
+      background-color: #f7f7f7;
+    }
+    .about-section h2 {
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    .about-section p {
+      font-size: 20px;
+    }
+    .team-section {
+      padding: 50px 0;
+      background-color: #fff;
+    }
+    .team-section h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+    .team-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .team-member img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .team-member h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .team-member p {
+      font-size: 18px;
+    }
+    #whole {
+      font-family: 'Poppins';
+    }
+    .about-section{
+      background-color: #00004d;
+    }
+    #AU {
+      background-color: #00004d;
+      width:5000px;
+      padding-bottom: 5px;
+      color: #67C8FF;
+    }
+    p {
+      text-align: justify;
+    }
+    #Meet {
+      color: #00004d;
+      font-family: 'Poppins';
+      font-weight: bold;
+    }
+    /* CSS animation */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+      opacity: 0;
+      animation-delay: 0.5s;
+    }
+    .fadeInUp {
+      animation-name: fadeInUp;
+    }
+    .image-container img {
+      max-width: 100%;
+      max-height: 100%;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div id="AU" class="container">
+      <h2>About Us</h2>
+      <p>We are GameOn! GO caters to the needs of players who are looking for a place to find sports academies nearby, discover ongoing game trials, and know when to apply. Our platform provides a space where athletes and sports enthusiasts can come together to explore nearby sports academies, stay updated on upcoming game trials, and seamlessly apply for opportunities. Whether you're a budding athlete looking to hone your skills or an avid sports fan eager to participate in events, GameOn is here to connect you with the sports community and help you level up your game.</p>
+    </div>
+  </section>
+
+    <!-- Image Container -->
+    <section class="image-section">
+      <div class="container">
+        <div class="image-container">
+          <img id="img" src="" alt="Placeholder Image">
+        </div>
+      </div>
+    </section>
+
+  <!-- Our Mission Section -->
+  <section class="about-section">
+    <div id="AU"class="container">
+      <h2 class="fadeInUp animated">Our Mission</h2>
+      <p class="fadeInUp animated">Our mission is to ensure that all talented players get a chance to receive quality training, showcase their skills, and achieve glory. We aspire to be a part of every individual's sporting journey, empowering them to reach their full potential.</p>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="whole" class="team-section">
+    <div class="container">
+      <h2 id="Meet">Meet Our Team</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="team-member">
+            <img src="https://via.placeholder.com/200" alt="Team Member 1">
+            <h3>Ayush Tiwari</h3>
+            <p>Team Lead</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-member">
+            <img src="https://via.placeholder.com/200" alt="Team Member 2">
+            <h3>Archi Jain</h3>
+            <p>Member 2</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-member">
+            <img src="https://via.placeholder.com/200" alt="Team Member 3">
+            <h3>Anushka Bhatt</h3>
+            <p>Member 3</p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="team-member">
+            <img src="https://via.placeholder.com/200" alt="Team Member 4">
+            <h3>Akruti Gupta</h3>
+            <p>Member 4</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Trigger animation
+    document.addEventListener("DOMContentLoaded", function() {
+      var animatedElements = document.querySelectorAll(".animated");
+      animatedElements.forEach(function(element) {
+        element.classList.add("fadeInUp");
+      });
+    });
+  </script>
+</body>
+</html>
